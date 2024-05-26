@@ -46,4 +46,19 @@
     audience: # optional, default is api://AzureADTokenExchange
     # The type of authentication. Supported values are SERVICE_PRINCIPAL, IDENTITY. Default value is SERVICE_PRINCIPAL
     auth-type: # optional, default is SERVICE_PRINCIPAL
+            - name: Microsoft Azure Container Registry Login
+  # You may pin to the exact commit or the version.
+  # uses: elgohr/acr-login-action@b088ef4d7c3847f3c14159b968860890482003fa
+  uses: elgohr/acr-login-action@0.1
+  with:
+    # The ACR service principal to use for login
+    service_principal: 
+    # The password of the service principal
+    service_principal_password: 
+    # The ACR tenant to use for login
+    tenant: 
+    # The ACR registry to use
+    registry: 
+    # The ACR repository to use
+    repository: 
           
